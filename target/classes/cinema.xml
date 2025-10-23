@@ -1,0 +1,79 @@
+<cinema>
+  <film id="lb78" type="comédie">
+    <titre>Les Bronzes</titre>
+    <annee>1978</annee>
+    <role>
+      <nom>Popeye</nom>
+      <acteur>Thierry Lhermite</acteur>
+    </role>
+    <role>
+      <nom>Jean-Claude Dusse</nom>
+      <acteur>Michel Blanc</acteur>
+    </role>
+  </film>
+
+  <film id="gf94" type="comédie">
+    <titre>Grosse fatigue</titre>
+    <annee>1994</annee>
+    <role>
+      <nom>Michel</nom>
+      <acteur>Michel Blanc</acteur>
+    </role>
+    <role>
+      <nom>Carole</nom>
+      <acteur>Carole Bouquet</acteur>
+    </role>
+  </film>
+
+  <film id="bj81" type="comédie">
+    <titre>Les Bronzés font du ski</titre>
+    <annee>1981</annee>
+    <role>
+      <nom>Jean-Claude Dusse</nom>
+      <acteur>Michel Blanc</acteur>
+    </role>
+    <role>
+      <nom>Bernard</nom>
+      <acteur>Gérard Jugnot</acteur>
+    </role>
+  </film>
+
+  <film id="bs83" type="comédie">
+    <titre>Le Père Noël est une ordure</titre>
+    <annee>1983</annee>
+    <role>
+      <nom>Katia</nom>
+      <acteur>Christian Clavier</acteur>
+    </role>
+    <role>
+      <nom>Josiane</nom>
+      <acteur>Josiane Balasko</acteur>
+    </role>
+  </film>
+
+  <film id="va85" type="comédie">
+    <titre>Viens chez moi, j'habite chez une copine</titre>
+    <annee>1985</annee>
+    <role>
+      <nom>Guy</nom>
+      <acteur>Michel Blanc</acteur>
+    </role>
+    <role>
+      <nom>Nicole</nom>
+      <acteur>Dominique Lavanant</acteur>
+    </role>
+  </film>
+
+  <film id="pl96" type="comédie">
+    <titre>Pédale douce</titre>
+    <annee>1996</annee>
+    <role>
+      <nom>Adrien</nom>
+      <acteur>Patrick Timsit</acteur>
+    </role>
+    <role>
+      <nom>Eva</nom>
+      <acteur>Fanny Ardant</acteur>
+    </role>
+  </film>
+</cinema>
