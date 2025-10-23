@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="product_company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="films">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="film" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titre" type="xs:string"/>
+                    <xs:element name="annee" type="xs:gYear"/>
+                    <xs:element name="realisateur" type="xs:string"/>
+                    <xs:element name="acteurs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="acteur" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required"/>
+                  <xs:attribute name="type" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="received_nominations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="film_ref" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titre" type="xs:string"/>
+                    <xs:element name="annee" type="xs:gYear"/>
+                    <xs:element name="nominations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="acteur" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="country" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

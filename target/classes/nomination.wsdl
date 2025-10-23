@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions 
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://www.example.org/nomination"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/nomination"
+    name="NominationService">
+
+  <!-- Types Section -->
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://www.example.org/cinema"
+                  schemaLocation="cinema.xsd"/>
+      <xsd:import namespace="http://www.example.org/product_company"
+                  schemaLocation="product_company.xsd"/>
+    </xsd:schema>
+  </types>
+
+  <!-- Messages -->
+  <message name="SendNominationsRequest">
+    <part name="cinema" element="xsd:anyType"/>
+  </message>
+
+  <message name="SendNominationsResponse">
+    <part name="productCompany" element="xsd:anyType"/>
+  </message>
+
+  <!-- Port Type -->
+  <portType name="NominationPortType">
+    <operation name="sendNominations">
+      <input message="tns:SendNominationsRequest"/>
+      <output message="tns:SendNominationsResponse"/>
+    </operation>
+  </portType>
+
+  <!-- Binding -->
+  <binding name="NominationBinding" type="tns:NominationPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="sendNominations">
+      <soap:operation soapAction="http://www.example.org/nomination/sendNominations"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+
+  <!-- Service -->
+  <service name="NominationService">
+    <documentation>SOAP Service: Cinema nominates actors for ProductCompany</documentation>
+    <port name="NominationPort" binding="tns:NominationBinding">
+      <soap:address location="http://localhost:8080/nominationService"/>
+    </port>
+  </service>
+
+</definitions>

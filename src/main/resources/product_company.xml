@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product_company name="Studio Europa" country="France">
+  
+  <films>
+    <film id="p101" type="drame">
+      <titre>Le Vent du Nord</titre>
+      <annee>2023</annee>
+      <realisateur>Luc Bernard</realisateur>
+      <acteurs>
+        <acteur>Sarah Mezni</acteur>
+        <acteur>Rami Khaled</acteur>
+      </acteurs>
+    </film>
+
+    <film id="p102" type="comédie romantique">
+      <titre>Amour en Hiver</titre>
+      <annee>2022</annee>
+      <realisateur>Claire Dupont</realisateur>
+      <acteurs>
+        <acteur>Julien Morel</acteur>
+        <acteur>Leïla Ben Ali</acteur>
+      </acteurs>
+    </film>
+  </films>
+
+  <received_nominations>
+    <film_ref id="lb78">
+      <titre>Les Bronzés</titre>
+      <annee>1978</annee>
+      <nominations>
+        <acteur>Thierry Lhermite</acteur>
+        <acteur>Michel Blanc</acteur>
+      </nominations>
+    </film_ref>
+
+    <film_ref id="bj81">
+      <titre>Les Bronzés font du ski</titre>
+      <annee>1981</annee>
+      <nominations>
+        <acteur>Michel Blanc</acteur>
+        <acteur>Gérard Jugnot</acteur>
+      </nominations>
+    </film_ref>
+
+    <film_ref id="pl96">
+      <titre>Pédale douce</titre>
+      <annee>1996</annee>
+      <nominations>
+        <acteur>Patrick Timsit</acteur>
+        <acteur>Fanny Ardant</acteur>
+      </nominations>
+    </film_ref>
+  </received_nominations>
+</product_company>

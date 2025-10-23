@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions 
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://cinema/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    name="CinemaService"
+    targetNamespace="http://cinema/">
+
+    <types>
+        <xsd:schema targetNamespace="http://cinema/">
+            <xsd:element name="getNominationsRequest">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="filmTitle" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="getNominationsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="nominations" type="xsd:string" maxOccurs="unbounded"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </types>
+
+    <message name="getNominationsRequest">
+        <part name="parameters" element="tns:getNominationsRequest"/>
+    </message>
+    <message name="getNominationsResponse">
+        <part name="parameters" element="tns:getNominationsResponse"/>
+    </message>
+
+    <portType name="CinemaService">
+        <operation name="getNominations">
+            <input message="tns:getNominationsRequest"/>
+            <output message="tns:getNominationsResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="CinemaServiceSOAP" type="tns:CinemaService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getNominations">
+            <soap:operation soapAction="getNominations"/>
+            <input><soap:body use="literal"/></input>
+            <output><soap:body use="literal"/></output>
+        </operation>
+    </binding>
+
+    <service name="CinemaServiceService">
+        <port name="CinemaServicePort" binding="tns:CinemaServiceSOAP">
+            <soap:address location="http://localhost:8080/ws/cinema"/>
+        </port>
+    </service>
+</definitions>
