@@ -4,15 +4,17 @@ public class ActorNomination {
     private String actorName;
     private String roleName;
     private String filmReference;
+    private String genre;
     private int salary;
 
     public ActorNomination() {
     }
 
-    public ActorNomination(String actorName, String roleName, String filmReference, int salary) {
+    public ActorNomination(String actorName, String roleName, String filmReference, String genre, int salary) {
         this.actorName = actorName;
         this.roleName = roleName;
         this.filmReference = filmReference;
+        this.genre = genre;
         this.salary = salary;
     }
 
@@ -40,6 +42,14 @@ public class ActorNomination {
         this.filmReference = filmReference;
     }
 
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
     public int getSalary() {
         return salary;
     }
@@ -50,6 +60,6 @@ public class ActorNomination {
 
     @Override
     public String toString() {
-        return actorName + " (" + roleName + " in " + filmReference + ") - $" + String.format("%,d", salary);
+        return actorName + " (" + filmReference + ") (" + roleName + ") [" + genre + "] - $" + String.format("%,d", salary);
     }
 }

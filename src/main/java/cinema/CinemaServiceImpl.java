@@ -89,6 +89,7 @@ public class CinemaServiceImpl {
                 
                 if (matchesAnyGenre) {
                     String filmTitle = getElementText(film, "titre");
+                    String filmGenre = normalizeGenre(filmType);
                     
                     // Get all roles/actors from this film
                     NodeList roles = film.getElementsByTagName("role");
@@ -103,7 +104,7 @@ public class CinemaServiceImpl {
                             salary = Integer.parseInt(salaryStr);
                         }
                         
-                        availableActors.add(new ActorNomination(actorName, roleName, filmTitle, salary));
+                        availableActors.add(new ActorNomination(actorName, roleName, filmTitle, filmGenre, salary));
                     }
                 }
             }
@@ -183,6 +184,25 @@ public class CinemaServiceImpl {
         }
         
         return nominations;
+    }
+    
+    private String normalizeGenre(String genre) {
+        if (genre == null) return "Unknown";
+        
+        String normalized = genre.toLowerCase().trim();
+        
+        // Convert French to English
+        if (normalized.equals("comédie") || normalized.equals("comedie")) return "Comedy";
+        if (normalized.equals("drame")) return "Drama";
+        if (normalized.equals("horreur")) return "Horror";
+        if (normalized.equals("science-fiction")) return "Sci-Fi";
+        
+        // Capitalize first letter for English genres
+        if (normalized.equals("action")) return "Action";
+        if (normalized.equals("romance")) return "Romance";
+        
+        // Default: capitalize first letter
+        return genre.substring(0, 1).toUpperCase() + genre.substring(1).toLowerCase();
     }
     
     private boolean matchesGenre(String filmGenre, String requestedGenre) {
