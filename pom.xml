@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cinema</groupId>
@@ -15,44 +16,39 @@
     </properties>
 
     <dependencies>
-        <!-- ✅ Jakarta XML Web Services API -->
+        <!-- Jakarta XML Web Services API -->
         <dependency>
             <groupId>jakarta.xml.ws</groupId>
             <artifactId>jakarta.xml.ws-api</artifactId>
             <version>4.0.0</version>
         </dependency>
 
-        <!-- ✅ Jakarta JWS (for @WebService, @WebMethod annotations) -->
+        <!-- Jakarta JWS (for @WebService, @WebMethod annotations) -->
         <dependency>
             <groupId>jakarta.jws</groupId>
             <artifactId>jakarta.jws-api</artifactId>
             <version>3.0.0</version>
         </dependency>
 
-        <!-- ✅ JAX-WS Runtime (implementation for Jakarta SOAP) -->
+        <!-- JAX-WS Runtime (implementation for Jakarta SOAP) -->
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-rt</artifactId>
             <version>4.0.0</version>
         </dependency>
 
-        <!-- Optional: JAXB (if you need XML binding for your cinema.xml or XSD) -->
+        <!-- JAXB (for XML binding) -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>4.0.0</version>
         </dependency>
+
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
             <version>4.0.2</version>
         </dependency>
-        <dependency>
-    <groupId>jakarta.xml.ws</groupId>
-    <artifactId>jakarta.xml.ws-api</artifactId>
-    <version>4.0.0</version>
-</dependency>
-
     </dependencies>
 
     <build>
@@ -67,7 +63,7 @@
                 </configuration>
             </plugin>
 
-            <!-- ✅ Run your app easily with: mvn exec:java -->
+            <!-- Run application -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -76,8 +72,23 @@
                     <mainClass>cinema.CinemaPublisher</mainClass>
                 </configuration>
             </plugin>
+
+            <!-- Generate SOAP client stubs from WSDL -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>2.6</version>
+                <!-- Execution removed to avoid wsimport running automatically in IDE builds; run manually with:
+                     mvn org.codehaus.mojo:jaxws-maven-plugin:2.6:wsimport
+                -->
+                <configuration>
+                    <wsdlUrls>
+                        <wsdlUrl>http://localhost:8080/ws/cinema?wsdl</wsdlUrl>
+                    </wsdlUrls>
+                    <packageName>cinema</packageName>
+                    <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-    
-
 </project>
