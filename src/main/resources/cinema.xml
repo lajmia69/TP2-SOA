@@ -1,79 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <cinema>
-  <film id="lb78" type="comédie">
-    <titre>Les Bronzes</titre>
-    <annee>1978</annee>
-    <role>
-      <nom>Popeye</nom>
-      <acteur>Thierry Lhermite</acteur>
-    </role>
-    <role>
-      <nom>Jean-Claude Dusse</nom>
-      <acteur>Michel Blanc</acteur>
-    </role>
-  </film>
-
-  <film id="gf94" type="comédie">
-    <titre>Grosse fatigue</titre>
-    <annee>1994</annee>
-    <role>
-      <nom>Michel</nom>
-      <acteur>Michel Blanc</acteur>
-    </role>
-    <role>
-      <nom>Carole</nom>
-      <acteur>Carole Bouquet</acteur>
-    </role>
-  </film>
-
-  <film id="bj81" type="comédie">
-    <titre>Les Bronzés font du ski</titre>
-    <annee>1981</annee>
-    <role>
-      <nom>Jean-Claude Dusse</nom>
-      <acteur>Michel Blanc</acteur>
-    </role>
-    <role>
-      <nom>Bernard</nom>
-      <acteur>Gérard Jugnot</acteur>
-    </role>
-  </film>
-
-  <film id="bs83" type="comédie">
-    <titre>Le Père Noël est une ordure</titre>
-    <annee>1983</annee>
-    <role>
-      <nom>Katia</nom>
-      <acteur>Christian Clavier</acteur>
-    </role>
-    <role>
-      <nom>Josiane</nom>
-      <acteur>Josiane Balasko</acteur>
-    </role>
-  </film>
-
-  <film id="va85" type="comédie">
-    <titre>Viens chez moi, j'habite chez une copine</titre>
-    <annee>1985</annee>
-    <role>
-      <nom>Guy</nom>
-      <acteur>Michel Blanc</acteur>
-    </role>
-    <role>
-      <nom>Nicole</nom>
-      <acteur>Dominique Lavanant</acteur>
-    </role>
-  </film>
-
-  <film id="pl96" type="comédie">
-    <titre>Pédale douce</titre>
+  <!-- ACTION MOVIES - 30 Actors -->
+  <film id="act001" type="action">
+    <titre>Mission Impossible</titre>
     <annee>1996</annee>
-    <role>
-      <nom>Adrien</nom>
-      <acteur>Patrick Timsit</acteur>
-    </role>
-    <role>
-      <nom>Eva</nom>
-      <acteur>Fanny Ardant</acteur>
-    </role>
+    <role><nom>Ethan Hunt</nom><acteur>Tom Cruise</acteur><salaire>20000000</salaire></role>
+    <role><nom>Jim Phelps</nom><acteur>Jon Voight</acteur><salaire>5000000</salaire></role>
   </film>
-</cinema>
+  <film id="act002" type="action">
+    <titre>Die Hard</titre>
+    <annee>1988</annee>
+    <role><nom>John McClane</nom><acteur>Bruce Willis</acteur><salaire>15000000</salaire></role>
+    <role><nom>Hans Gruber</nom><acteur>Alan Rickman</acteur><salaire>8000000</salaire></role>
+  </film>
+  <film id="act003" type="action">
+    <titre>The Matrix</titre>
+    <annee>1999</annee>
+    <role><nom>Neo</nom><acteur>Keanu Reeves</acteur><salaire>10000000</salaire></role>
+    <role><nom>Trinity</nom><acteur>Carrie-Anne Moss</acteur><salaire>3000000</salaire></role>
+    <role><nom>Morpheus</nom><acteur>Laurence Fishburne</acteur><salaire>5000000</salaire></role>
+  </film>
+  <film id="act004" type="action">
+    <titre>Mad Max Fury Road</titre>
+    <annee>2015</annee>
+    <role><nom>Max</nom><acteur>Tom Hardy</acteur><salaire>12000000</salaire></role>
+    <role><nom>Furiosa</nom><acteur>Charlize Theron</acteur><salaire>10000000</salaire></role>
+  </film>
+  <film id="act005" type="action">
+    <titre>John Wick</titre>
+    <annee>2014</annee>
+    <role><nom>John Wick</nom><acteur>Keanu Reeves</acteur><salaire>8000000</salaire></role>
+    <role><nom>Viggo</nom><acteur>Michael Nyqvist</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="act006" type="action">
+    <titre>Terminator 2</titre>
+    <annee>1991</annee>
+    <role><nom>T-800</nom><acteur>Arnold Schwarzenegger</acteur><salaire>15000000</salaire></role>
+    <role><nom>Sarah Connor</nom><acteur>Linda Hamilton</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="act007" type="action">
+    <titre>Fast and Furious</titre>
+    <annee>2001</annee>
+    <role><nom>Dominic Toretto</nom><acteur>Vin Diesel</acteur><salaire>9000000</salaire></role>
+    <role><nom>Brian O'Conner</nom><acteur>Paul Walker</acteur><salaire>7000000</salaire></role>
+  </film>
+  <film id="act008" type="action">
+    <titre>Gladiator</titre>
+    <annee>2000</annee>
+    <role><nom>Maximus</nom><acteur>Russell Crowe</acteur><salaire>12000000</salaire></role>
+    <role><nom>Commodus</nom><acteur>Joaquin Phoenix</acteur><salaire>6000000</salaire></role>
+  </film>
+  <film id="act009" type="action">
+    <titre>Lethal Weapon</titre>
+    <annee>1987</annee>
+    <role><nom>Martin Riggs</nom><acteur>Mel Gibson</acteur><salaire>8000000</salaire></role>
+    <role><nom>Roger Murtaugh</nom><acteur>Danny Glover</acteur><salaire>5000000</salaire></role>
+  </film>
+  <film id="act010" type="action">
+    <titre>The Bourne Identity</titre>
+    <annee>2002</annee>
+    <role><nom>Jason Bourne</nom><acteur>Matt Damon</acteur><salaire>11000000</salaire></role>
+    <role><nom>Marie</nom><acteur>Franka Potente</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="act011" type="action">
+    <titre>Rambo First Blood</titre>
+    <annee>1982</annee>
+    <role><nom>John Rambo</nom><acteur>Sylvester Stallone</acteur><salaire>10000000</salaire></role>
+    <role><nom>Trautman</nom><acteur>Richard Crenna</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="act012" type="action">
+    <titre>Predator</titre>
+    <annee>1987</annee>
+    <role><nom>Dutch</nom><acteur>Arnold Schwarzenegger</acteur><salaire>12000000</salaire></role>
+    <role><nom>Dillon</nom><acteur>Carl Weathers</acteur><salaire>2500000</salaire></role>
+  </film>
+
+  <!-- COMEDY MOVIES - 30 Actors -->
+  <film id="com001" type="comédie">
+    <titre>Les Bronzés</titre>
+    <annee>1978</annee>
+    <role><nom>Popeye</nom><acteur>Thierry Lhermitte</acteur><salaire>2000000</salaire></role>
+    <role><nom>Jean-Claude</nom><acteur>Michel Blanc</acteur><salaire>2500000</salaire></role>
+  </film>
+  <film id="com002" type="comédie">
+    <titre>The Hangover</titre>
+    <annee>2009</annee>
+    <role><nom>Phil</nom><acteur>Bradley Cooper</acteur><salaire>5000000</salaire></role>
+    <role><nom>Alan</nom><acteur>Zach Galifianakis</acteur><salaire>3000000</salaire></role>
+    <role><nom>Stu</nom><acteur>Ed Helms</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="com003" type="comédie">
+    <titre>Superbad</titre>
+    <annee>2007</annee>
+    <role><nom>Seth</nom><acteur>Jonah Hill</acteur><salaire>1500000</salaire></role>
+    <role><nom>Evan</nom><acteur>Michael Cera</acteur><salaire>1500000</salaire></role>
+  </film>
+  <film id="com004" type="comédie">
+    <titre>Groundhog Day</titre>
+    <annee>1993</annee>
+    <role><nom>Phil Connors</nom><acteur>Bill Murray</acteur><salaire>6000000</salaire></role>
+    <role><nom>Rita</nom><acteur>Andie MacDowell</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="com005" type="comédie">
+    <titre>Anchorman</titre>
+    <annee>2004</annee>
+    <role><nom>Ron Burgundy</nom><acteur>Will Ferrell</acteur><salaire>4000000</salaire></role>
+    <role><nom>Veronica</nom><acteur>Christina Applegate</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="com006" type="comédie">
+    <titre>Bridesmaids</titre>
+    <annee>2011</annee>
+    <role><nom>Annie</nom><acteur>Kristen Wiig</acteur><salaire>3500000</salaire></role>
+    <role><nom>Megan</nom><acteur>Melissa McCarthy</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="com007" type="comédie">
+    <titre>Dumb and Dumber</titre>
+    <annee>1994</annee>
+    <role><nom>Lloyd</nom><acteur>Jim Carrey</acteur><salaire>7000000</salaire></role>
+    <role><nom>Harry</nom><acteur>Jeff Daniels</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="com008" type="comédie">
+    <titre>Mrs Doubtfire</titre>
+    <annee>1993</annee>
+    <role><nom>Daniel</nom><acteur>Robin Williams</acteur><salaire>8000000</salaire></role>
+    <role><nom>Miranda</nom><acteur>Sally Field</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="com009" type="comédie">
+    <titre>Mean Girls</titre>
+    <annee>2004</annee>
+    <role><nom>Cady</nom><acteur>Lindsay Lohan</acteur><salaire>2500000</salaire></role>
+    <role><nom>Regina</nom><acteur>Rachel McAdams</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="com010" type="comédie">
+    <titre>Step Brothers</titre>
+    <annee>2008</annee>
+    <role><nom>Brennan</nom><acteur>Will Ferrell</acteur><salaire>5000000</salaire></role>
+    <role><nom>Dale</nom><acteur>John C. Reilly</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="com011" type="comédie">
+    <titre>21 Jump Street</titre>
+    <annee>2012</annee>
+    <role><nom>Schmidt</nom><acteur>Jonah Hill</acteur><salaire>3000000</salaire></role>
+    <role><nom>Jenko</nom><acteur>Channing Tatum</acteur><salaire>3500000</salaire></role>
+  </film>
+  <film id="com012" type="comédie">
+    <titre>Wedding Crashers</titre>
+    <annee>2005</annee>
+    <role><nom>John</nom><acteur>Owen Wilson</acteur><salaire>4000000</salaire></role>
+    <role><nom>Jeremy</nom><acteur>Vince Vaughn</acteur><salaire>4000000</salaire></role>
+  </film>
+
+  <!-- DRAMA MOVIES - 30 Actors -->
+  <film id="dra001" type="drame">
+    <titre>The Shawshank Redemption</titre>
+    <annee>1994</annee>
+    <role><nom>Andy</nom><acteur>Tim Robbins</acteur><salaire>8000000</salaire></role>
+    <role><nom>Red</nom><acteur>Morgan Freeman</acteur><salaire>12000000</salaire></role>
+  </film>
+  <film id="dra002" type="drame">
+    <titre>Forrest Gump</titre>
+    <annee>1994</annee>
+    <role><nom>Forrest</nom><acteur>Tom Hanks</acteur><salaire>18000000</salaire></role>
+    <role><nom>Jenny</nom><acteur>Robin Wright</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="dra003" type="drame">
+    <titre>The Godfather</titre>
+    <annee>1972</annee>
+    <role><nom>Vito</nom><acteur>Marlon Brando</acteur><salaire>10000000</salaire></role>
+    <role><nom>Michael</nom><acteur>Al Pacino</acteur><salaire>8000000</salaire></role>
+  </film>
+  <film id="dra004" type="drame">
+    <titre>Schindler's List</titre>
+    <annee>1993</annee>
+    <role><nom>Schindler</nom><acteur>Liam Neeson</acteur><salaire>9000000</salaire></role>
+    <role><nom>Goeth</nom><acteur>Ralph Fiennes</acteur><salaire>5000000</salaire></role>
+  </film>
+  <film id="dra005" type="drame">
+    <titre>Good Will Hunting</titre>
+    <annee>1997</annee>
+    <role><nom>Will</nom><acteur>Matt Damon</acteur><salaire>6000000</salaire></role>
+    <role><nom>Sean</nom><acteur>Robin Williams</acteur><salaire>7000000</salaire></role>
+  </film>
+  <film id="dra006" type="drame">
+    <titre>A Beautiful Mind</titre>
+    <annee>2001</annee>
+    <role><nom>John Nash</nom><acteur>Russell Crowe</acteur><salaire>10000000</salaire></role>
+    <role><nom>Alicia</nom><acteur>Jennifer Connelly</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="dra007" type="drame">
+    <titre>The Pianist</titre>
+    <annee>2002</annee>
+    <role><nom>Szpilman</nom><acteur>Adrien Brody</acteur><salaire>5000000</salaire></role>
+    <role><nom>Hosenfeld</nom><acteur>Thomas Kretschmann</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="dra008" type="drame">
+    <titre>12 Years a Slave</titre>
+    <annee>2013</annee>
+    <role><nom>Solomon</nom><acteur>Chiwetel Ejiofor</acteur><salaire>6000000</salaire></role>
+    <role><nom>Patsey</nom><acteur>Lupita Nyongo</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="dra009" type="drame">
+    <titre>The Pursuit of Happyness</titre>
+    <annee>2006</annee>
+    <role><nom>Chris</nom><acteur>Will Smith</acteur><salaire>14000000</salaire></role>
+    <role><nom>Christopher</nom><acteur>Jaden Smith</acteur><salaire>1000000</salaire></role>
+  </film>
+  <film id="dra010" type="drame">
+    <titre>Rain Man</titre>
+    <annee>1988</annee>
+    <role><nom>Raymond</nom><acteur>Dustin Hoffman</acteur><salaire>9000000</salaire></role>
+    <role><nom>Charlie</nom><acteur>Tom Cruise</acteur><salaire>11000000</salaire></role>
+  </film>
+  <film id="dra011" type="drame">
+    <titre>Moonlight</titre>
+    <annee>2016</annee>
+    <role><nom>Chiron</nom><acteur>Trevante Rhodes</acteur><salaire>2000000</salaire></role>
+    <role><nom>Juan</nom><acteur>Mahershala Ali</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="dra012" type="drame">
+    <titre>Manchester by the Sea</titre>
+    <annee>2016</annee>
+    <role><nom>Lee</nom><acteur>Casey Affleck</acteur><salaire>5000000</salaire></role>
+    <role><nom>Patrick</nom><acteur>Lucas Hedges</acteur><salaire>1500000</salaire></role>
+  </film>
+
+  <!-- ROMANCE MOVIES - 30 Actors -->
+  <film id="rom001" type="romance">
+    <titre>Titanic</titre>
+    <annee>1997</annee>
+    <role><nom>Jack</nom><acteur>Leonardo DiCaprio</acteur><salaire>15000000</salaire></role>
+    <role><nom>Rose</nom><acteur>Kate Winslet</acteur><salaire>8000000</salaire></role>
+  </film>
+  <film id="rom002" type="romance">
+    <titre>The Notebook</titre>
+    <annee>2004</annee>
+    <role><nom>Noah</nom><acteur>Ryan Gosling</acteur><salaire>4000000</salaire></role>
+    <role><nom>Allie</nom><acteur>Rachel McAdams</acteur><salaire>3500000</salaire></role>
+  </film>
+  <film id="rom003" type="romance">
+    <titre>Pride and Prejudice</titre>
+    <annee>2005</annee>
+    <role><nom>Elizabeth</nom><acteur>Keira Knightley</acteur><salaire>5000000</salaire></role>
+    <role><nom>Mr Darcy</nom><acteur>Matthew Macfadyen</acteur><salaire>3000000</salaire></role>
+  </film>
+  <film id="rom004" type="romance">
+    <titre>La La Land</titre>
+    <annee>2016</annee>
+    <role><nom>Mia</nom><acteur>Emma Stone</acteur><salaire>8000000</salaire></role>
+    <role><nom>Sebastian</nom><acteur>Ryan Gosling</acteur><salaire>7000000</salaire></role>
+  </film>
+  <film id="rom005" type="romance">
+    <titre>Before Sunrise</titre>
+    <annee>1995</annee>
+    <role><nom>Jesse</nom><acteur>Ethan Hawke</acteur><salaire>3000000</salaire></role>
+    <role><nom>Celine</nom><acteur>Julie Delpy</acteur><salaire>2500000</salaire></role>
+  </film>
+  <film id="rom006" type="romance">
+    <titre>Amélie</titre>
+    <annee>2001</annee>
+    <role><nom>Amélie</nom><acteur>Audrey Tautou</acteur><salaire>3500000</salaire></role>
+    <role><nom>Nino</nom><acteur>Mathieu Kassovitz</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="rom007" type="romance">
+    <titre>Crazy Stupid Love</titre>
+    <annee>2011</annee>
+    <role><nom>Cal</nom><acteur>Steve Carell</acteur><salaire>6000000</salaire></role>
+    <role><nom>Jacob</nom><acteur>Ryan Gosling</acteur><salaire>5000000</salaire></role>
+    <role><nom>Hannah</nom><acteur>Emma Stone</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="rom008" type="romance">
+    <titre>When Harry Met Sally</titre>
+    <annee>1989</annee>
+    <role><nom>Harry</nom><acteur>Billy Crystal</acteur><salaire>4000000</salaire></role>
+    <role><nom>Sally</nom><acteur>Meg Ryan</acteur><salaire>3500000</salaire></role>
+  </film>
+  <film id="rom009" type="romance">
+    <titre>Pretty Woman</titre>
+    <annee>1990</annee>
+    <role><nom>Edward</nom><acteur>Richard Gere</acteur><salaire>7000000</salaire></role>
+    <role><nom>Vivian</nom><acteur>Julia Roberts</acteur><salaire>6000000</salaire></role>
+  </film>
+  <film id="rom010" type="romance">
+    <titre>Silver Linings Playbook</titre>
+    <annee>2012</annee>
+    <role><nom>Pat</nom><acteur>Bradley Cooper</acteur><salaire>7000000</salaire></role>
+    <role><nom>Tiffany</nom><acteur>Jennifer Lawrence</acteur><salaire>6000000</salaire></role>
+  </film>
+  <film id="rom011" type="romance">
+    <titre>Love Actually</titre>
+    <annee>2003</annee>
+    <role><nom>Mark</nom><acteur>Andrew Lincoln</acteur><salaire>2000000</salaire></role>
+    <role><nom>Juliet</nom><acteur>Keira Knightley</acteur><salaire>2500000</salaire></role>
+  </film>
+  <film id="rom012" type="romance">
+    <titre>500 Days of Summer</titre>
+    <annee>2009</annee>
+    <role><nom>Tom</nom><acteur>Joseph Gordon-Levitt</acteur><salaire>3000000</salaire></role>
+    <role><nom>Summer</nom><acteur>Zooey Deschanel</acteur><salaire>2500000</salaire></role>
+  </film>
+
+  <!-- SCI-FI MOVIES - 30 Actors -->
+  <film id="sci001" type="science-fiction">
+    <titre>Inception</titre>
+    <annee>2010</annee>
+    <role><nom>Cobb</nom><acteur>Leonardo DiCaprio</acteur><salaire>20000000</salaire></role>
+    <role><nom>Arthur</nom><acteur>Joseph Gordon-Levitt</acteur><salaire>5000000</salaire></role>
+    <role><nom>Ariadne</nom><acteur>Elliot Page</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="sci002" type="science-fiction">
+    <titre>Interstellar</titre>
+    <annee>2014</annee>
+    <role><nom>Cooper</nom><acteur>Matthew McConaughey</acteur><salaire>12000000</salaire></role>
+    <role><nom>Brand</nom><acteur>Anne Hathaway</acteur><salaire>8000000</salaire></role>
+  </film>
+  <film id="sci003" type="science-fiction">
+    <titre>Blade Runner 2049</titre>
+    <annee>2017</annee>
+    <role><nom>K</nom><acteur>Ryan Gosling</acteur><salaire>10000000</salaire></role>
+    <role><nom>Deckard</nom><acteur>Harrison Ford</acteur><salaire>12000000</salaire></role>
+  </film>
+  <film id="sci004" type="science-fiction">
+    <titre>The Arrival</titre>
+    <annee>2016</annee>
+    <role><nom>Louise</nom><acteur>Amy Adams</acteur><salaire>7000000</salaire></role>
+    <role><nom>Ian</nom><acteur>Jeremy Renner</acteur><salaire>5000000</salaire></role>
+  </film>
+  <film id="sci005" type="science-fiction">
+    <titre>Ex Machina</titre>
+    <annee>2014</annee>
+    <role><nom>Caleb</nom><acteur>Domhnall Gleeson</acteur><salaire>3000000</salaire></role>
+    <role><nom>Ava</nom><acteur>Alicia Vikander</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="sci006" type="science-fiction">
+    <titre>Dune</titre>
+    <annee>2021</annee>
+    <role><nom>Paul</nom><acteur>Timothée Chalamet</acteur><salaire>9000000</salaire></role>
+    <role><nom>Lady Jessica</nom><acteur>Rebecca Ferguson</acteur><salaire>5000000</salaire></role>
+  </film>
+  <film id="sci007" type="science-fiction">
+    <titre>Gravity</titre>
+    <annee>2013</annee>
+    <role><nom>Ryan Stone</nom><acteur>Sandra Bullock</acteur><salaire>14000000</salaire></role>
+    <role><nom>Matt</nom><acteur>George Clooney</acteur><salaire>8000000</salaire></role>
+  </film>
+  <film id="sci008" type="science-fiction">
+    <titre>District 9</titre>
+    <annee>2009</annee>
+    <role><nom>Wikus</nom><acteur>Sharlto Copley</acteur><salaire>2000000</salaire></role>
+    <role><nom>Koobus</nom><acteur>David James</acteur><salaire>1000000</salaire></role>
+  </film>
+  <film id="sci009" type="science-fiction">
+    <titre>Edge of Tomorrow</titre>
+    <annee>2014</annee>
+    <role><nom>Cage</nom><acteur>Tom Cruise</acteur><salaire>16000000</salaire></role>
+    <role><nom>Rita</nom><acteur>Emily Blunt</acteur><salaire>6000000</salaire></role>
+  </film>
+  <film id="sci010" type="science-fiction">
+    <titre>Looper</titre>
+    <annee>2012</annee>
+    <role><nom>Joe</nom><acteur>Joseph Gordon-Levitt</acteur><salaire>4000000</salaire></role>
+    <role><nom>Old Joe</nom><acteur>Bruce Willis</acteur><salaire>8000000</salaire></role>
+  </film>
+  <film id="sci011" type="science-fiction">
+    <titre>Children of Men</titre>
+    <annee>2006</annee>
+    <role><nom>Theo</nom><acteur>Clive Owen</acteur><salaire>5000000</salaire></role>
+    <role><nom>Kee</nom><acteur>Clare-Hope Ashitey</acteur><salaire>1500000</salaire></role>
+  </film>
+  <film id="sci012" type="science-fiction">
+    <titre>Moon</titre>
+    <annee>2009</annee>
+    <role><nom>Sam Bell</nom><acteur>Sam Rockwell</acteur><salaire>3000000</salaire></role>
+    <role><nom>GERTY</nom><acteur>Kevin Spacey</acteur><salaire>2000000</salaire></role>
+  </film>
+
+  <!-- HORROR MOVIES - 30 Actors -->
+  <film id="hor001" type="horreur">
+    <titre>The Shining</titre>
+    <annee>1980</annee>
+    <role><nom>Jack</nom><acteur>Jack Nicholson</acteur><salaire>6000000</salaire></role>
+    <role><nom>Wendy</nom><acteur>Shelley Duvall</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="hor002" type="horreur">
+    <titre>A Quiet Place</titre>
+    <annee>2018</annee>
+    <role><nom>Lee</nom><acteur>John Krasinski</acteur><salaire>3000000</salaire></role>
+    <role><nom>Evelyn</nom><acteur>Emily Blunt</acteur><salaire>4000000</salaire></role>
+  </film>
+  <film id="hor003" type="horreur">
+    <titre>Get Out</titre>
+    <annee>2017</annee>
+    <role><nom>Chris</nom><acteur>Daniel Kaluuya</acteur><salaire>4000000</salaire></role>
+    <role><nom>Rose</nom><acteur>Allison Williams</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="hor004" type="horreur">
+    <titre>Hereditary</titre>
+    <annee>2018</annee>
+    <role><nom>Annie</nom><acteur>Toni Collette</acteur><salaire>5000000</salaire></role>
+    <role><nom>Peter</nom><acteur>Alex Wolff</acteur><salaire>1500000</salaire></role>
+  </film>
+  <film id="hor005" type="horreur">
+    <titre>The Conjuring</titre>
+    <annee>2013</annee>
+    <role><nom>Ed Warren</nom><acteur>Patrick Wilson</acteur><salaire>3000000</salaire></role>
+    <role><nom>Lorraine</nom><acteur>Vera Farmiga</acteur><salaire>3500000</salaire></role>
+  </film>
+  <film id="hor006" type="horreur">
+    <titre>It</titre>
+    <annee>2017</annee>
+    <role><nom>Pennywise</nom><acteur>Bill Skarsgård</acteur><salaire>6000000</salaire></role>
+    <role><nom>Beverly</nom><acteur>Sophia Lillis</acteur><salaire>1000000</salaire></role>
+  </film>
+  <film id="hor007" type="horreur">
+    <titre>The Exorcist</titre>
+    <annee>1973</annee>
+    <role><nom>Father Karras</nom><acteur>Jason Miller</acteur><salaire>3000000</salaire></role>
+    <role><nom>Regan</nom><acteur>Linda Blair</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="hor008" type="horreur">
+    <titre>Midsommar</titre>
+    <annee>2019</annee>
+    <role><nom>Dani</nom><acteur>Florence Pugh</acteur><salaire>5000000</salaire></role>
+    <role><nom>Christian</nom><acteur>Jack Reynor</acteur><salaire>2000000</salaire></role>
+  </film>
+  <film id="hor009" type="horreur">
+    <titre>The Ring</titre>
+    <annee>2002</annee>
+    <role><nom>Rachel</nom><acteur>Naomi Watts</acteur><salaire>4000000</salaire></role>
+    <role><nom>Noah</nom><acteur>Martin Henderson</acteur><salaire>2000000</salaire></role>
+  </film>
+  </cinema> 

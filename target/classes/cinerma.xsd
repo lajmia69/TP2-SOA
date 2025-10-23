@@ -14,6 +14,7 @@
                   <xs:sequence>
                     <xs:element name="nom" type="xs:string"/>
                     <xs:element name="acteur" type="xs:string"/>
+                    <xs:element name="salaire" type="xs:integer"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>

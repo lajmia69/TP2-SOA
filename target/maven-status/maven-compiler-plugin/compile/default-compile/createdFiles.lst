@@ -1,5 +1,7 @@
 productCompany\ProductClient.class
-cinema\CinemaService.class
+cinema\ActorNomination.class
 cinema\Main.class
+cinema\client\CinemaServiceInterface.class
+cinema\CinemaServiceImpl.class
 cinema\CinemaPublisher.class
 productCompany\Main_Client.class
