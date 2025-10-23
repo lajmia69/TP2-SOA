@@ -1,5 +1,5 @@
+// CinemaPublisher.java
 package cinema;
-
 import jakarta.xml.ws.Endpoint;
 
 public class CinemaPublisher {

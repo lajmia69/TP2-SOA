@@ -7,7 +7,6 @@ import java.util.List;
 
 @WebService
 public class CinemaService {
-
     @WebMethod
     public List<String> getNominations(String filmTitle) {
         List<String> nominations = new ArrayList<>();
