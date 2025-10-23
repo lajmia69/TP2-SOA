@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>cinema</groupId>
     <artifactId>cinema</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -22,28 +21,24 @@
             <artifactId>jakarta.xml.ws-api</artifactId>
             <version>4.0.0</version>
         </dependency>
-
         <!-- Jakarta JWS (for @WebService, @WebMethod annotations) -->
         <dependency>
             <groupId>jakarta.jws</groupId>
             <artifactId>jakarta.jws-api</artifactId>
             <version>3.0.0</version>
         </dependency>
-
         <!-- JAX-WS Runtime (implementation for Jakarta SOAP) -->
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-rt</artifactId>
             <version>4.0.0</version>
         </dependency>
-
         <!-- JAXB (for XML binding) -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>4.0.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
@@ -62,17 +57,13 @@
                     <release>21</release>
                 </configuration>
             </plugin>
-
             <!-- Run application -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
-                <configuration>
-                    <mainClass>cinema.CinemaPublisher</mainClass>
-                </configuration>
+                <!-- Don't specify mainClass here—pass -Dexec.mainClass on the command line for flexibility -->
             </plugin>
-
             <!-- Generate SOAP client stubs from WSDL -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

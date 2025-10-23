@@ -7,17 +7,14 @@ import java.util.List;
 
 public class ProductClient {
     public static void main(String[] args) throws Exception {
-        // Match these values to your WSDL!
-        URL wsdlUrl = new URL("http://localhost:8080/ws/cinema?wsdl"); // Must match published server/WSDL
+        URL wsdlUrl = new URL("http://localhost:8080/ws/cinema?wsdl");
         QName SERVICE_NAME = new QName("http://cinema/", "CinemaServiceService");
 
-        // Create the SOAP service
         Service service = Service.create(wsdlUrl, SERVICE_NAME);
 
-        // NOTE: cinema.CinemaService must match what is generated (if using wsimport, for example)
-        cinema.CinemaService cinemaPort = service.getPort(cinema.CinemaService.class);
-
-        // Request nominations for a movie
+        // Use the PORT INTERFACE, not the service class
+        cinema.CinemaServicePortType cinemaPort = service.getPort(cinema.CinemaServicePortType.class);
+        
         String movie = "Space Odyssey";
         List<String> nominees = cinemaPort.getNominations(movie);
 
