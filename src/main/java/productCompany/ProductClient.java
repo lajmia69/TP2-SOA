@@ -25,7 +25,7 @@ public class ProductClient {
             System.out.println("  4. romance");
             System.out.println("  5. sci-fi (science fiction)");
             System.out.println("  6. horror");
-            System.out.println("\n💡 TIP: You can enter multiple genres!");
+            System.out.println("\nTIP: You can enter multiple genres!");
             System.out.println("   Examples: 'action comedy' or 'drama, romance' or 'action and sci-fi'");
             System.out.print("\nEnter movie genre(s): ");
             String genres = scanner.nextLine().trim();
@@ -39,15 +39,15 @@ public class ProductClient {
             try {
                 budget = scanner.nextLong();
                 if (budget <= 0) {
-                    System.out.println("⚠ Budget must be positive! Using default: $50,000,000");
+                    System.out.println("Budget must be positive! Using default: $50,000,000");
                     budget = 50000000;
                 }
                 if (budget > 1000000000) {
-                    System.out.println("⚠ Budget capped at $1,000,000,000 (1 billion)");
+                    System.out.println(" Budget capped at $1,000,000,000 (1 billion)");
                     budget = 1000000000;
                 }
             } catch (Exception e) {
-                System.out.println("⚠ Invalid budget! Using default: $50,000,000");
+                System.out.println("Invalid budget! Using default: $50,000,000");
                 budget = 50000000;
                 scanner.nextLine(); // Clear buffer
             }
