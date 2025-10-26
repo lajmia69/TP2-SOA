@@ -174,7 +174,7 @@ public class CinemaServiceImpl {
                 
                 nominations.add("");
                 nominations.add("════════════════════════════════════════════════");
-                nominations.add("✓ Total actors nominated: " + selectedActors.size());
+                nominations.add(" Total actors nominated: " + selectedActors.size());
                 nominations.add("════════════════════════════════════════════════");
             }
             
