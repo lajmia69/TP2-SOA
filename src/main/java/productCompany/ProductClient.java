@@ -25,7 +25,7 @@ public class ProductClient {
             System.out.println("  4. romance");
             System.out.println("  5. sci-fi (science fiction)");
             System.out.println("  6. horror");
-            System.out.println("\nTIP: You can enter multiple genres!");
+            System.out.println("\nPS: You can enter multiple genres!");
             System.out.println("   Examples: 'action comedy' or 'drama, romance' or 'action and sci-fi'");
             System.out.print("\nEnter movie genre(s): ");
             String genres = scanner.nextLine().trim();
