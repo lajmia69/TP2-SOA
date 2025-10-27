@@ -35,7 +35,7 @@ public class ProductClient {
             System.out.println("  Medium budget: $50,000,000");
             System.out.println("  Blockbuster: $200,000,000");
             System.out.print("\nEnter your budget (in USD, numbers only): $");
-            long budget = 0;
+            long budget ;
             try {
                 budget = scanner.nextLong();
                 if (budget <= 0) {
@@ -80,7 +80,7 @@ public class ProductClient {
             
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
-            e.printStackTrace();
         }
     }
 }
+//forte et faible liaision d une interface 

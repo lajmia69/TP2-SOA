@@ -1,14 +1,20 @@
 package cinema;
 
+import java.io.IOException;
+
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import jakarta.jws.WebService;
+
 import org.w3c.dom.*;
+
 import javax.xml.parsers.*;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import org.xml.sax.SAXException;
 
 @WebService(
     name = "CinemaService",
@@ -35,9 +41,8 @@ public class CinemaServiceImpl {
             cinemaDocument = builder.parse(is);
             cinemaDocument.getDocumentElement().normalize();
             System.out.println("Cinema XML loaded successfully!");
-        } catch (Exception e) {
+        } catch (IOException | RuntimeException | ParserConfigurationException | SAXException e) {
             System.err.println("Error loading cinema.xml: " + e.getMessage());
-            e.printStackTrace();
         }
     }
     
@@ -178,9 +183,8 @@ public class CinemaServiceImpl {
                 nominations.add("════════════════════════════════════════════════");
             }
             
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             nominations.add("Error processing nomination: " + e.getMessage());
-            e.printStackTrace();
         }
         
         return nominations;
